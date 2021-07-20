@@ -2,15 +2,24 @@
 <html>
 <head>
     <title>This is task 1 title</title>
+    <style>
+        p{
+            color: orangered;
+            text-decoration: underline;
+        }
+    </style>
+    <!-- below link to exteranl stylesheet-->
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
 </head>
 <body>
     
     
     <h1 style="color: red; background-color: #FFC300;">
         This is largest text on a page. This is H1 tag, example of inline css.
+    
     </h1>
-    <a href="http://www.google.com"> Click Here to go Google.com </a>
-    <h6>
+    <a href="http://www.google.com" style="color: darkblue;background-color: lightblue;padding:5px;width:170px;"> Click Here to go Google.com example inline style </a>
+    <h6 id="smallText">
         This is smallest text on a page. This is H6 tag
     </h6>
     <img src="https://cdn.searchenginejournal.com/wp-content/uploads/2020/01/which-web-design-platform-is-right-for-you-5e4d59fb941b9.png" alt="image of web design on different devices" width="240px" >
@@ -41,8 +50,9 @@
             <td>SIT192</td>
         </tr>
     </table>
+    <p> this is internal style, of paragraph tag. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, nihil omnis architecto soluta distinctio ex ratione eveniet voluptatibus ipsum ducimus optio sint accusantium porro! Rerum ducimus autem saepe deserunt animi.</p>
     <h2>Form </h2>
-    <form method="post" action="file.php">
+    <form id="formText" method="post" action="file.php">
         <b>First Name: </b>
             <input type="text" name="FirstName" size="25" maxlength="100" placeholder="Enter First Name"required><br>
         <b>Last Name: </b>
