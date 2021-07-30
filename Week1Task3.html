@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>This is Week1 Task 1 title</title>
+    <style media="screen">
+      img{
+        padding: 1.5%;
+      }
+    </style>
+</head>
+  <link rel="stylesheet" href="Week1Task3Style.css">
+
+<body>
+    <div class="container">
+      <div id="header">
+          <h1>Webpage Header</h1>
+      </div>
+      <div id="contentLeft">
+          <table>
+            <tr>
+                <th>Student</th>
+                <th>Course</th>
+                <th>Unit</th>
+            </tr>
+            <tr>
+                <td>Student 1</td>
+                <td>IT</td>
+                <td>SIT120</td>
+            </tr>
+            <tr>
+                <td>Student 2</td>
+                <td>CS</td>
+                <td>SIT232</td>
+            </tr>
+            <tr>
+                <td>Student 3</td>
+                <td>IT</td>
+                <td>SIT102</td>
+            </tr>
+            <tr>
+                <td>Student 4</td>
+                <td>CS</td>
+                <td>SIT192</td>
+              </tr>
+          </table>
+          <form id="contactForm" method="post" action="file.php">
+            <h2>Contact Form</h2>
+            <b>First Name: </b>
+              <input type="text" name="FirstName" size="25" maxlength="100" placeholder="Enter First Name"required><br>
+            <b>Last Name: </b>
+               <input type="text" name="LastName" size="25" maxlength="100" placeholder="Enter Last Name" required><br>
+            <b>Email: </b>
+               <input type="email"name="Email" size="75" maxlength="100" placeholder="Enter Email Address"><br>
+            <b> Course: </b>
+               <input type="radio" name="Course" value="Computer Science">Computer Science
+               <input type="radio" name="Course" value="Information Technology">Information Technology
+               <input type="radio" name="Course" value="Cyber Security">Cyber Security<br>
+            <b> Unit: </b>
+               <input type="checkbox" name="Unit" value="SIT192">SIT192
+               <input type="checkbox" name="Unit" value="SIT232">SIT232
+               <input type="checkbox" name="Unit" value="SIT120">SIT120<br>
+            <b> Which is Web Browser: </b>
+            <select>
+               <option value="Chrome">Chrome
+               <option value="Firefox">Firefox
+               <option value="Safari ">Safari
+               <option value="Edge">Edge
+            </select><br>
+            <b>Learn HTML/CSS/ JS now button: </b>
+               <input type="submit" value="Buy Now" ><br>
+               <b>Reset button which clear data: </b>
+               <input type="reset" value="Clear">
+          </form>
+          <p>First paragraph,Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <p>Second paragraph, Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <p> The output of Java Script Scores Array </p>
+          <p id="display"></P>
+    </div>
+
+    <div id="contentRight">
+      <p> This is paragraph tag.</p>
+      <a href="http://www.google.com" style="text-decoration: none"> Click Here to go Google.com  </a> <br>
+      <img src="https://cdn.searchenginejournal.com/wp-content/uploads/2020/01/which-web-design-platform-is-right-for-you-5e4d59fb941b9.png"
+            alt="image of web design on different devices" width="240px" >
+            <p>First paragraph,Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <p>Second paragraph, Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <p>Third paragraph, Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+
+      </div>
+      <div id="footer">
+          <h4>Webpage Footer</h4>
+        </div>
+  </div>
+  <script>
+  const scores = new Array(57,68,72,88,55,97,52);
+
+  const sLength = scores.length;
+
+  let totalScores =0;
+
+
+  for (let i = 0; i < sLength; i++) {
+     totalScores += scores[i];
+  }
+  let avarageScore = (totalScores/ sLength);
+
+  console.log(totalScores);
+  console.log(avarageScore);
+  document.getElementById("display").innerHTML =  "The avarage score:" + avarageScore;
+
+  </script>
+</body>
+</html>
