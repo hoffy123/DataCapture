@@ -1,84 +1,137 @@
 <!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>This is task 1 title</title>
-    <style>
-        p{
-            color: orangered;
-            text-decoration: underline;
-        }
-    </style>
-    <!-- below link to exteranl stylesheet-->
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Menachem Mendel Hoffman 221100074">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Uni Pizza @ Burwood</title>
 </head>
 <body>
-    
-    
-    <h1 style="color: red; background-color: #FFC300;">
-        This is largest text on a page. This is H1 tag, example of inline css.
-    
-    </h1>
-    <a href="http://www.google.com" style="color: darkblue;background-color: lightblue;padding:5px;width:170px;"> Click Here to go Google.com example inline style </a>
-    <h6 id="smallText">
-        This is smallest text on a page. This is H6 tag
-    </h6>
-    <img src="https://cdn.searchenginejournal.com/wp-content/uploads/2020/01/which-web-design-platform-is-right-for-you-5e4d59fb941b9.png" alt="image of web design on different devices" width="240px" >
-    <table>
-        <tr">
-            <th>Student</th>
-            <th>Course</th>
-            <th>Unit</th>
-        </tr>
-        <tr>
-            <td>Student 1</td>
-            <td>IT</td>
-            <td>SIT120</td>
-        </tr>
-        <tr>
-            <td>Student 2</td>
-            <td>CS</td>
-            <td>SIT232</td>
-        </tr>
-        <tr>
-            <td>Student 3</td>
-            <td>IT</td>
-            <td>SIT102</td>
-        </tr>
-        <tr>
-            <td>Student 4</td>
-            <td>CS</td>
-            <td>SIT192</td>
-        </tr>
-    </table>
-    <p> this is internal style, of paragraph tag. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, nihil omnis architecto soluta distinctio ex ratione eveniet voluptatibus ipsum ducimus optio sint accusantium porro! Rerum ducimus autem saepe deserunt animi.</p>
-    <h2>Form </h2>
-    <form id="formText" method="post" action="file.php">
-        <b>First Name: </b>
-            <input type="text" name="FirstName" size="25" maxlength="100" placeholder="Enter First Name"required><br>
-        <b>Last Name: </b>
-            <input type="text" name="LastName" size="25" maxlength="100" placeholder="Enter Last Name" required><br>
-        <b>Email: </b>
-            <input type="email"name="Email" size="75" maxlength="100" placeholder="Enter Email Address"><br>
-        <b> Course: </b>
-            <input type="radio" name="Course" value="Computer Science">Computer Science
-            <input type="radio" name="Course" value="Information Technology">Information Technology
-            <input type="radio" name="Course" value="Cyber Security">Cyber Security<br>
+    <div class = "container">
+         <div id="header">
+            <h1>Uni Pizza @ Burwood </h1>
+        </div> 
+        <div id="navBar">
+            <ol>
+                <il>
+                    <a href="#header"> HOME</a>
+                </il>
+                <il>
+                    <a href="#menu"> MENU</a>
+                </il>
+                <il>
+                    <a href="#OrderForm"> ORDER</a>
+                </il>
+                <il>
+                    <a href="#footer"> CONTACT</a>
+                </il>
+            </ol>
+      </div> 
+      <div id="contentOne">
+        <img src="PizzaImg1.jpg"
+        alt="image of Pizza" width="450vm" height="250vh">
+    </div>
+    <div id="contentTwo">
+        <img src="PizzaImg2.jpg"
+        alt="image of Pizza" width="450vm" height="250vh">
+    </div>
+    <div id="contentThree">
+        <img src="PizzaImg3.jpg"
+        alt="image of Pizza" width="450vm" height="250vh">
+    </div>
+    <div id="leftContent">
+        <form id="OrderForm" method="post" action="file.php">
+            <h3>Order Form</h3>
+            <b>First Name: </b>
+              <input type="text" name="FirstName" size="25" maxlength="50" placeholder="Enter First Name"required><br>
+            <b>Last Name: </b>
+               <input type="text" name="LastName" size="25" maxlength="50" placeholder="Enter Last Name" required><br>
+            <b>Mobile Number: </b>
+            <input type="text"name="MobileNumber" size="20" maxlength="10" placeholder="Enter Mobile Number"><br>
+            <b>Email: </b>
+               <input type="email"name="Email" size="25" maxlength="100" placeholder="Enter Email Address"><br>
+               <b> Pizza Type: </b>
+               <select>
+                  <option value="Margherita">Margherita
+                  <option value="Calzone">Calzone
+                  <option value="New York-Style">New York-Style
+                  <option value="Neapolitan">Neapolitan
+               </select><br>
+               <b> Size: </b>
+               <input type="radio" name="size" value="Small">Small
+               <input type="radio" name="size" value="Medium"> Medium
+               <input type="radio" name="size" value="Large">Large<br>
 
-        <b> Unit: </b>
-            <input type="checkbox" name="Unit" value="SIT192">SIT192
-            <input type="checkbox" name="Unit" value="SIT232">SIT232
-            <input type="checkbox" name="Unit" value="SIT120">SIT120<br>
-        <b> Which is Web Browser: </b>
-        <select>
-            <option value="Chrome">Chrome
-            <option value="Firefox">Firefox
-            <option value="Safari ">Safari 
-            <option value="Edge">Edge
-        </select><br>
-        <b>Learn HTML/CSS/ JS now button: </b>
-            <input type="submit" value="Buy Now" ><br>
-            <b>Reset button which clear data: </b>
-            <input type="reset" value="Clear">
-    </form>
+            <b>Extra Toppings: </b>
+               <input type="checkbox" name="Toppings" value="Zucchini">Zucchini
+               <input type="checkbox" name="Toppings" value="Mushrooms">Mushrooms
+               <input type="checkbox" name="Toppings" value="More Cheeses">More Cheeses<br>
+               
+            <b>Confirm Order: </b>
+               <input type="button" onclick="alert('The order has been placed')" value="Order Now" ><br>
+               <b>Reset button which clear data: </b>
+               <input type="reset" onclick="alert('The order has been reset place new order')" alue="Clear">
+          </form>
+        </div>
+        <div id="middleContent">
+          <h3>OPENING HOURS</h3>
+          <table >
+          <tr>
+              <td>Monday</td>
+              <td>12pm -</td>
+              <td>10pm</td>
+          </tr>
+          <tr>
+            <td>Tuesday</td>
+            <td>12pm -</td>
+            <td>10pm</td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td>12pm  -</td>
+            <td>10pm</td>
+        </tr>
+        <tr>
+            <td>Thrusday</td>
+            <td>12pm -</td>
+            <td>10pm</td>
+        </tr>
+        <tr>
+            <td>Friday</td>
+            <td>12pm -</td>
+            <td>10pm</td>
+        </tr>
+        <tr>
+            <td>Saturday</td>
+            <td>12pm -</td>
+            <td>8pm</td>
+        </tr>
+        <tr>
+            <td>Sunday</td>
+            <td>12pm -</td>
+            <td>8pm</td>
+        </tr>
+        </table>
+    
+        
+    </div>
+    <div id="rightContent">
+        <h3>Our Story</h3>
+        <p>We are fourth generation pizzeria with a recipe that has been passed down from our great grandmother. The same techniques and ingredients that were used in our great grandparent’s pizzeria back in Napoli are still being used today in our Uni Pizza store. We make simple sauces with delicious combinations of toppings to match the sauces perfectly.
+        </p>
+    </div>
+    <div id="footer">
+        <h3>
+            PH:9312 0000   Email: hello@UniPizza.com  Uni Pizza  Established COVID 2020
+        </h3>
+    </div>     
+    </div>
+    <script src="jscript.js" charset="utf-8"></script>
 </body>
 </html>
