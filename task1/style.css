@@ -1,0 +1,240 @@
+body {
+    background-color: #b21807;
+    padding: 0%;
+    margin: 0%;
+    border: 0%;
+}
+.container{
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 0.2fr 1.5fr 1.5fr 0.2fr;
+    grid-template-areas:
+      "header header header"
+      "navBar navBar navBar"
+      "contentOne contentTwo contentThree"
+      "leftContent middleContent rightContent"
+      "footer footer footer";
+      font-family: 'Roboto', sans-serif;
+}
+#header{
+    background-color: #ADD8E6;
+    grid-area: header;
+    text-align: center;
+    color: #2A907E;
+    margin: 0.5%;
+    padding: 0%;
+    border: 0%;
+}  
+#navBar{
+    background-color: #ADD8E6;
+    grid-area: navBar;
+    text-align: center;
+    margin: 0.5%;
+    padding: 0.2%;
+}
+#navBar a{
+    text-decoration: none;
+    color: #2A907E;;
+    padding: 2%; 
+    font-weight: bold;
+}
+#navBar  a:hover{
+    text-decoration: underline;
+}
+#contentOne{
+    text-align: center;
+    grid-area: contentOne;
+    color: #2A907E;
+    padding: 1.5%;
+}
+#contentOne img {
+    border-radius: 10%;
+}
+#contentTwo{
+    grid-area: contentTwo;
+    text-align: center;
+    color: #2A907E;
+    padding: 1.5%;
+}
+#contentTwo img {
+    border-radius: 10%;
+}
+#contentThree{
+    grid-area: contentThree;
+    text-align: center;
+    color: #2A907E;
+    padding: 1.5%;
+}
+#contentThree img {
+    border-radius: 10%;
+}
+#leftContent{
+    background-color: #ADD8E6;
+    grid-area: leftContent; 
+    margin: 1.5%;
+    padding: 0.2%; 
+}
+#leftContent h3{
+    color: #2A907E;
+}
+#OrderForm{
+    padding-left: 5%;
+}
+#middleContent{
+    background-color: #ADD8E6;
+    grid-area: middleContent;
+    margin: 1.5%;
+    padding: 0.2%;
+}
+#middleContent h3{
+    color: #2A907E;
+    padding-left: 5%;
+}
+#rightContent{
+    background-color: #ADD8E6;
+    grid-area: rightContent;
+    text-align: center;
+    margin: 1.5%;
+    padding: 0.2%;
+}
+#rightContent h3{
+    color: #2A907E;
+}
+#rightContent p {
+    padding: 2.5%;
+}
+#footer{
+    background-color: #ADD8E6;
+    grid-area: footer;
+    text-align: center;
+    color: #2A907E;
+    font-weight: bold;
+    margin: 0.5%;
+    padding: 2%;
+}
+@media screen and (max-width: 700px){
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 0.1fr 0.5fr 0.5fr 1fr 1fr 0.5fr 0.1fr 0.5fr;
+        grid-template-areas:
+        "header"
+        "navBar"
+        "contentOne"
+        "leftContent"
+        "middleContent"
+        "rightContent"
+        "contentTwo"
+        "footer"
+        "contentThree";      
+    } 
+    #header{
+        background-color: #ADD8E6;
+        grid-area: header;
+        text-align: center;
+        color: #2A907E;
+        margin: 0%;
+        padding: 0%;
+        border: 0%;
+    }  
+    #navBar{
+        background-color: #ADD8E6;
+        grid-area: navBar;
+        text-align: center;
+        margin: 0%;
+        padding: 0%;
+        border: 0%;
+    }
+    #navBar a{
+        text-decoration: none;
+        color: #2A907E;;
+        padding: 2%; 
+        font-weight: bold;
+    }
+    #navBar  a:hover{
+        text-decoration: underline;
+    }
+    #contentOne{
+        text-align: center;
+        grid-area: contentOne;
+        color: #2A907E;
+        padding: 1.5%;
+    }
+    #contentOne img {
+        border-radius: 10%;
+        max-width: 100%; height: auto;
+    }
+    #leftContent{
+        background-color: #ADD8E6;
+        grid-area: leftContent; 
+        margin: 1.5%;
+        padding: 0.2%; 
+    }
+    #leftContent h3{
+        color: #2A907E;
+    }
+    #OrderForm{
+        padding-left: 5%;
+    }
+    #middleContent{
+        background-color: #ADD8E6;
+        grid-area: middleContent;
+        margin: 1.5%;
+        padding: 0.2%;
+    }
+    #middleContent h3{
+        color: #2A907E;
+        padding-left: 5%;
+    }
+    
+    #rightContent{
+        background-color: #ADD8E6;
+        grid-area: rightContent;
+        text-align: center;
+        margin: 1.5%;
+        padding: 0.2%;
+    }
+    #rightContent h3{
+        color: #2A907E;
+    }
+    #rightContent p {
+        padding: 2.5%;
+    }
+    #contentTwo{
+        text-align: center;
+        grid-area: contentTwo;
+        color: #2A907E;
+        padding: 1.5%;
+    }
+    #contentTwo img {
+        border-radius: 10%;
+        max-width: 100%; height: auto;
+    }
+    #footer{
+        background-color: #ADD8E6;
+        grid-area: footer;
+        text-align: center;
+        color: #2A907E;
+        font-weight: bold;
+        margin: 0.5%;
+        padding: 2%;
+    }
+    #contentThree{
+        text-align: center;
+        grid-area: contentThree;
+        color: #2A907E;
+        padding: 1.5%;
+    }
+    #contentThree img {
+        border-radius: 10%;
+        max-width: 100%; height: auto;
+    }
+    
+
+}
+
+
+
+
+
+
