@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <link rel="stylesheet" href="Task4.css">
+    <title>Checklist App</title>
+</head>
+<body>
+    <div class="container">
+        <div id="app">
+            {{displayText}}
+          
+                <div v-for="list in checklist">
+                    <input class="checkListClass"
+                    type="checkbox"
+                    v-on:change = "toggleList(list)"
+                    v-bind:checked="list.done"
+                    v-bind:unchecked="list.done"
+                     />
+                  
+                <del id="delete" v-if="list.done">
+                {{list.displayText}}
+                </del>
+                <span v-else>
+                    {{list.displayText}}
+                </span>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    <script src="Task4.js"></script>
+</body>
+</html>
