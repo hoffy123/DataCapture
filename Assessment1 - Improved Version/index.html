@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Menachem Mendel Hoffman 221100074">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Uni Pizza </title>
+</head>
+<body>
+    <div class = "container">
+         <div id="header">
+            <h1>Uni Pizza</h1>
+        </div> 
+        <div id="navBar">
+            <ol>
+                <il>
+                    <a href="#header"> HOME</a>
+                </il>
+                <il>
+                    <a href="#menu"> MENU</a>
+                </il>
+                <il>
+                    <a href="#OrderForm"> ORDER</a>
+                </il>
+                <il>
+                    <a href="#footer"> CONTACT</a>
+                </il>
+                <il>
+                    <input class="search-bar" type="text" placeholder="SEARCH BAR">
+                </il>
+           
+               
+
+            </ol>
+      </div> 
+      <div id="contentOne">
+        <img src="PizzaImg1.jpg"
+        alt="image of Pizza" width="450vm" height="250vh">
+    </div>
+    <div id="contentTwo">
+        <img src="PizzaImg2.jpg"
+        alt="image of Pizza" width="450vm" height="250vh">
+    </div>
+    <div id="contentThree">
+        <img src="PizzaImg3.jpg"
+        alt="image of Pizza" width="450vm" height="250vh">
+    </div>
+    <div id="leftContent">
+        <form id="OrderForm" method="post" action="file.php">
+            <h3>ORDER FORM</h3>
+            <b>First Name: </b>
+              <input type="text" name="FirstName" size="25" maxlength="50" placeholder="Enter First Name"required><br>
+            <b>Last Name: </b>
+               <input type="text" name="LastName" size="25" maxlength="50" placeholder="Enter Last Name" required><br>
+            <b>Mobile Number: </b>
+            <input type="text"name="MobileNumber" size="20" maxlength="10" placeholder="Enter Mobile Number"><br>
+            <b>Email Address: </b>
+               <input type="email"name="Email" size="25" maxlength="100" placeholder="Enter Email Address"><br>
+               <b> Pizza Type: </b>
+               <select>
+                  <option value="">Choose Pizza Type
+                  <option value="Margherita">Margherita
+                  <option value="Calzone">Calzone
+                  <option value="New York-Style">New York-Style
+                  <option value="Neapolitan">Neapolitan
+               </select><br>
+               <b> Size: </b>
+               <input type="radio" name="size" value="Small">Small
+               <input type="radio" name="size" value="Medium"> Medium
+               <input type="radio" name="size" value="Large">Large<br>
+
+            <b>Extra Toppings: </b>
+               <input type="checkbox" name="Toppings" value="Zucchini">Zucchini
+               <input type="checkbox" name="Toppings" value="Mushrooms">Mushrooms
+               <input type="checkbox" name="Toppings" value="More Cheeses">More Cheeses<br>
+               
+            <b>Confirm Order: </b>
+               <input type="button" onclick="alert('The order has been placed')" value="Order Now" ><br>
+               <b>Reset button: </b>
+               <input type="reset" onclick="alert('The order has been reset place new order')" alue="Clear">
+          </form>
+        </div>
+        <div id="middleContent">
+            <div id="location">
+                
+                <h3>LOCATION</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3150.5448540075104!2d145.11275841517656!3d-37.847539879746314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad640592c2ddceb%3A0x805bd52f251bd12!2sDeakin%20University%20Melbourne%20Burwood%20Campus!5e0!3m2!1sen!2sau!4v1628506441465!5m2!1sen!2sau" width="220" height="165" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                
+                </div>
+                <div id="openingHours">
+                <h3>OPENING HOURS</h3>
+                    <table >
+                    <tr>
+                        <td>Mon</td>
+                        <td>12pm -</td>
+                        <td>10pm</td>
+                    </tr>
+                    <tr>
+                      <td>Tue</td>
+                      <td>12pm -</td>
+                      <td>10pm</td>
+                  </tr>
+                  <tr>
+                      <td>Wed</td>
+                      <td>12pm  -</td>
+                      <td>10pm</td>
+                  </tr>
+                  <tr>
+                      <td>Thu</td>
+                      <td>12pm -</td>
+                      <td>10pm</td>
+                  </tr>
+                  <tr>
+                      <td>Fri</td>
+                      <td>12pm -</td>
+                      <td>10pm</td>
+                  </tr>
+                  <tr>
+                      <td>Sat</td>
+                      <td>12pm -</td>
+                      <td>8pm</td>
+                  </tr>
+                  <tr>
+                      <td>Sun</td>
+                      <td>12pm -</td>
+                      <td>8pm</td>
+                  </tr>
+                  </table>
+                </div>
+       
+    </div>
+    <div id="rightContent">
+        <h3>OUR STORY</h3>
+        <p>We are fourth generation pizzeria with a recipe that has been passed down from our great grandmother. The same techniques and ingredients that were used in our great grandparent’s pizzeria back in Napoli are still being used today in our Uni Pizza store. We make simple sauces with delicious combinations of toppings to match the sauces perfectly.
+        </p>
+    </div>
+    <div id="footer">
+        <h3>
+            Ph: 9312 0000   Email: hello@UniPizza.com  Uni Pizza  Est. 2020
+        </h3>
+    </div>     
+    </div>
+    <script src="jscript.js" charset="utf-8"></script>
+</body>
+</html>

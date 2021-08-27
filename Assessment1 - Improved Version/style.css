@@ -1,0 +1,308 @@
+body {
+    background-color: #b21807;
+    padding: 0%;
+    margin: 0%;
+    border: 0%;
+}
+.container{
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 0.2fr 1.5fr 1.5fr 0.2fr;
+    grid-template-areas:
+      "header header header"
+      "navBar navBar navBar"
+      "contentOne contentTwo contentThree"
+      "leftContent middleContent rightContent"
+      "footer footer footer";
+      font-family: 'Roboto', sans-serif;
+}
+#header{
+    background-color: #ADD8E6;
+    grid-area: header;
+    text-align: center;
+    color: #2A907E;
+    margin: 0.5%;
+    padding: 0%;
+    border: 0%;
+    border-radius: 10px;
+}  
+#header h1{
+    letter-spacing: 0.2em;
+}
+#navBar{
+    background-color: #ADD8E6;
+    grid-area: navBar;
+    text-align: center;
+    font-size: 20px;
+    margin: 0.5%;
+    padding: 0.2%;
+    border-radius: 10px;
+}
+#navBar a{
+    text-decoration: none;
+    color: #2A907E;;
+    padding: 2%; 
+    font-weight: bold;
+    letter-spacing: .5em;
+}
+#navBar  a:hover{
+    text-decoration: underline;
+}
+.search-bar{
+    background-color: #ADD8E6;
+    border: 5px solid #b21807;
+    font-size: 15px;
+    border-radius: 10px;
+    float: right;
+    margin-right: 30px;
+}
+.search-bar::placeholder{
+    color:#2A907E
+}
+.search-bar:hover{
+    font-size: 15px;
+}
+#contentOne{
+    text-align: center;
+    grid-area: contentOne;
+    color: #2A907E;
+    padding: 1.5%;
+}
+#contentOne img {
+    border-radius: 10%;
+}
+#contentTwo{
+    grid-area: contentTwo;
+    text-align: center;
+    color: #2A907E;
+    padding: 1.5%;
+}
+#contentTwo img {
+    border-radius: 10%;
+}
+#contentThree{
+    grid-area: contentThree;
+    text-align: center;
+    color: #2A907E;
+    padding: 1.5%;
+}
+#contentThree img {
+    border-radius: 10%;
+}
+#leftContent{
+    background-color: #ADD8E6;
+    grid-area: leftContent; 
+    margin: 1.5%;
+    padding: 0.2%; 
+    border-radius: 5%;
+}
+#leftContent h3{
+    color: #2A907E;
+    letter-spacing: 0.2em;
+}
+#OrderForm{
+    padding-left: 5%;
+}
+#middleContent{
+    background-color: #ADD8E6;
+    grid-area: middleContent;
+    margin: 1.5%;
+    padding: 0.2%;
+    padding-right: 5%;
+    border-radius: 5%;
+}
+#middleContent h3{
+    color: #2A907E;
+    letter-spacing: 0.2em;
+}
+
+#middleContent #location{
+    float: right;
+    padding-left: 5%;
+    padding-right: 0.2%;
+}
+#middleContent #openingHours{
+    padding-left: 5%;
+    padding-right: 2%;
+}
+
+
+#rightContent{
+    background-color: #ADD8E6;
+    grid-area: rightContent;
+    text-align: center;
+    margin: 1.5%;
+    padding: 0.2%;
+    border-radius: 5%;
+}
+#rightContent h3{
+    color: #2A907E;
+    letter-spacing: 0.2em;
+}
+#rightContent p {
+    padding: 0.5%;
+    word-spacing: 0.1em;
+}
+#footer{
+    background-color: #ADD8E6;
+    grid-area: footer;
+    text-align: center;
+    color: #2A907E;
+    font-weight: bold;
+    margin: 0.5%;
+    padding: 2%;
+    border-radius: 5px;
+}
+#footer h3{
+    letter-spacing: 0.1em;
+    word-spacing: 0.5em;
+}
+@media screen and (max-width: 400px){
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 0.1fr 0.5fr 0.5fr 1fr 1fr 0.5fr 0.1fr 0.5fr;
+        grid-template-areas:
+        "header"
+        "navBar"
+        "contentOne"
+        "leftContent"
+        "middleContent"
+        "rightContent"
+        "contentTwo"
+        "footer"
+        "contentThree";      
+    } 
+    #header{
+        background-color: #ADD8E6;
+        grid-area: header;
+        text-align: center;
+        color: #2A907E;
+        margin: 0%;
+        padding: 0%;
+        border: 0%;
+    }  
+    #navBar{
+        background-color: #ADD8E6;
+        grid-area: navBar;
+        text-align: center;
+        margin: 0%;
+        padding: 0%;
+        border: 0%;
+    }
+    #navBar a{
+        text-decoration: none;
+        color: #2A907E;;
+        padding: 2%; 
+        font-weight: bold;
+    }
+    #navBar  a:hover{
+        text-decoration: underline;
+    }
+    #contentOne{
+        text-align: center;
+        grid-area: contentOne;
+        color: #2A907E;
+        padding: 1.5%;
+    }
+    #contentOne img {
+        border-radius: 10%;
+        max-width: 100%; height: auto;
+    }
+    #leftContent{
+        background-color: #ADD8E6;
+        grid-area: leftContent; 
+        margin: 1.5%;
+        padding: 0.2%; 
+    }
+    #leftContent h3{
+        color: #2A907E;
+    }
+    #OrderForm{
+        padding-left: 5%;
+    }
+    #middleContent{
+        background-color: #ADD8E6;
+        grid-area: middleContent;
+        margin: 1.5%;
+        padding: 0.2%;
+    }
+    #middleContent h3{
+        color: #2A907E;
+        padding-left: 5%;
+    }
+    #middleContent h3{
+        color: #2A907E;
+        letter-spacing: 0.2em;
+    }
+    
+    #middleContent #location{
+        float: left;
+        padding-left: 5%;
+        padding-right: 0.2%;
+        margin-left: 40px ;
+    }
+   
+    #middleContent #openingHours{
+        float: left;
+        padding-left: 5%;
+        padding-right: 2%;
+        padding-bottom: 2%;
+        margin-left: 40px ;
+    }
+    
+    #rightContent{
+        background-color: #ADD8E6;
+        grid-area: rightContent;
+        text-align: center;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 10px;
+        padding: 0.2%;
+        border: 0px;
+
+    }
+    #rightContent h3{
+        color: #2A907E;
+    }
+    #rightContent p {
+        padding: 2.5%;
+    }
+    #contentTwo{
+        text-align: center;
+        grid-area: contentTwo;
+        color: #2A907E;
+        padding: 1.5%;
+    }
+    #contentTwo img {
+        border-radius: 10%;
+        max-width: 100%; height: auto;
+    }
+    #footer{
+        background-color: #ADD8E6;
+        grid-area: footer;
+        text-align: center;
+        color: #2A907E;
+        font-weight: bold;
+        margin: 0.5%;
+        padding: 2%;
+    }
+    #contentThree{
+        text-align: center;
+        grid-area: contentThree;
+        color: #2A907E;
+        padding: 1.5%;
+    }
+    #contentThree img {
+        border-radius: 10%;
+        max-width: 100%; height: auto;
+    }
+    
+
+}
+
+
+
+
+
+
