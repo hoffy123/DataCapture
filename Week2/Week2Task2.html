@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mendel Pizza Shop </title>
+
+</head>
+  <link rel="stylesheet" href="Week2Task2.css">
+
+<body>
+    <div class="container">
+      <div id="header">
+          <h1> Mendel Pizza Shop </h1>
+      </div>
+      <div id="navBar">
+            <ol>
+                <il>
+                    <a href="#header"> HOME</a>
+                </il>
+                <il>
+                    <a href="#menu"> MENU</a>
+                </il>
+                <il>
+                    <a href="#OrderForm"> ORDER</a>
+                </il>
+                <il>
+                    <a href="#footer"> CONTACT</a>
+                </il>
+            </ol>
+      </div>
+      <div id="contentLeft">
+        <img src="https://image.freepik.com/free-vector/pizza-restaurant-menu-template_52683-58969.jpg"
+        alt="image of Pizza" width="450vm" height="250vh">
+          <table id="menu">
+              <h3>Menu</h3>
+            <tr>
+                <th>Pizza</th>
+                <th>Size</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Margherit</td>
+                <td>Small</td>
+                <td>$7.50</td>
+            </tr>
+            <tr>
+                <td>Calzone </td>
+                <td>Small</td>
+                <td>$7.50</td>
+            </tr>
+            <tr>
+                <td>New York-Style</td>
+                <td>Small</td>
+                <td>$7.50</td>
+            </tr>
+            <tr>
+                <td>Neapolitan</td>
+                <td>Small</td>
+                <td>$7.50</td>
+              </tr>
+          </table>
+          <p>First paragraph,Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <p>Second paragraph, Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+         </p>
+          <form id="OrderForm" method="post" action="file.php">
+            <h2>Order Form</h2>
+            <b>First Name: </b>
+              <input type="text" name="FirstName" size="25" maxlength="50" placeholder="Enter First Name"required><br>
+            <b>Last Name: </b>
+               <input type="text" name="LastName" size="25" maxlength="50" placeholder="Enter Last Name" required><br>
+            <b>Mobile Number: </b>
+            <input type="text"name="MobileNumber" size="20" maxlength="10" placeholder="Enter Mobile Number"><br>
+            <b> Size: </b>
+            <b>Email: </b>
+               <input type="email"name="Email" size="25" maxlength="100" placeholder="Enter Email Address"><br>
+            <b> Size: </b>
+               <input type="radio" name="size" value="Small">Small
+               <input type="radio" name="size" value="Medium"> Medium
+               <input type="radio" name="size" value="Large">Large<br>
+            <b> Pizza Type: </b>
+            <select>
+               <option value="Margherita">Margherit
+               <option value="Calzone">Calzone
+               <option value="New York-Style">New York-Style
+               <option value="Neapolitan">Neapolitan
+            </select><br>
+            <b>Extra Toppings: </b>
+               <input type="checkbox" name="Toppings" value="Zucchini">Zucchini
+               <input type="checkbox" name="Toppings" value="Mushrooms">Mushrooms
+               <input type="checkbox" name="Toppings" value="More Cheeses">More Cheeses
+               <input type="checkbox" name="Toppings" value="Pineapple">Pineapple<br>
+               <input type="checkbox" name="Toppings" value="Olives">Olives<br>
+
+            <b>Confirm Order: </b>
+               <input type="button" onclick="alert('The order has been placed')" value="Order Now" ><br>
+               <b>Reset button which clear data: </b>
+               <input type="reset" value="Clear">
+          </form>
+
+    </div>
+
+    <div id="contentRight">
+      <p id="testimonials"> Testimonials </p>
+    
+      <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=714&q=80"
+            alt="image of Pizza" width="25%" height="150vh">
+            <img src="https://images.unsplash.com/photo-1520201163981-8cc95007dd2a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80"
+            alt="image of Pizza" width="25%"  height="150vh">
+            <img src="https://images.unsplash.com/photo-1545016803-a7e357a737e4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+            alt="image of Pizza" width="25%"  height="150vh">
+            
+            <p> The Pizza crust was just right. 5 Stars  local Customer, Joe 
+            </p>
+            <p> Best Pizza in town. 4 Stars Local Customer, Marry
+            </p> 
+            <p> The Calzone make me feel like I'm back Italy. 5 Stars Local Customer, Leonardo
+            </p>
+            <p> The love the New York-Style pizza give me feeling like I'm in big Apple with thin crust . 5 Stars  local Customer, Jacob 
+            </p>
+            <p> Best Pizza in town. 4 Stars Local Customer, Sarah
+            </p> 
+            <p> The Calzone make me feel like I'm back Italy. 5 Stars Local Customer, Andrea
+            </p>
+            <img src="https://images.unsplash.com/photo-1589187151053-5ec8818e661b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80"
+            alt="image of Pizza" width="25%"  height="150vh" >
+            <img src="https://images.unsplash.com/photo-1618213837799-25d5552820d3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1026&q=80"
+            alt="image of Pizza" width="25%"  height="150vh">
+            <img src="https://images.unsplash.com/photo-1579824218206-e70b13561132?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+            alt="image of Pizza" width="25%"  height="150vh">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3150.5448540075104!2d145.11275841517656!3d-37.847539879746314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad640592c2ddceb%3A0x805bd52f251bd12!2sDeakin%20University%20Melbourne%20Burwood%20Campus!5e0!3m2!1sen!2sau!4v1627907133542!5m2!1sen!2sau" width="350" height="262.5" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+
+      </div>
+      <div id="footer">
+            <h5>Student Number: 221100074 &#169 Mendel Pizza Shop 2021 </h5>
+            <h5>PH: 03 97000 3214 Email: info@MendelPizza.com</h5>
+        </div>
+  </div>
+  
+</body>
+</html>

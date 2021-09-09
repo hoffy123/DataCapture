@@ -1,0 +1,80 @@
+body{
+    background-color: lightcoral;
+    padding: 0%;
+    margin: 0%;
+    border: 0%;
+}
+img{
+  padding: 1.5%;
+}
+.container{
+    display: grid;
+    height: 80 vh;
+    grid-gap: 0.5rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.2fr 0.2fr 1.5fr 0.2fr;
+    grid-template-areas:
+      "header header"
+      "navBar navBar"
+      "contentLeft contentRight "
+      "footer footer";
+  }
+  #header{
+    background-color: lightblue;
+    grid-area: header;
+    text-align: center;
+  }  
+#navBar{
+    background-color: lightblue;
+    grid-area: navBar;
+    text-align: center;  
+}
+#navBar a{
+    text-decoration: none;
+    color: black;
+    padding: 1.5%; 
+}
+#navBar  a:hover{
+    text-decoration: underline;
+    color: grey;
+}
+  #contentLeft{
+    background-color: lightblue;
+    grid-area: contentLeft;
+    padding-left: 2.5%;
+  }
+  #menu td{
+    padding: 5%;
+  }
+  #contentRight{
+    background-color: lightblue ;
+    grid-area: contentRight;
+    padding-left: 2.5%;
+  }
+  #testimonials{
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 2em;
+  }
+  #OrderForm{
+    background-color: lightblue;
+    padding-bottom: 2.5%;
+  }
+  #footer{
+    background-color: lightblue ;
+    grid-area: footer;
+    text-align: center;
+  }
+
+@media screen and (max-width: 600px){
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 0.1r 1fr 1fr 0.1fr;
+        grid-template-areas:
+        "header"
+        "navBar"
+        "contentLeft"
+        "contentRight "
+        "footer";      
+    }    
+}
