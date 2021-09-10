@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <title>Document</title>
+</head>
+<body>
+    <!--task 1-->
+    <div id="app">
+      
+        <div>
+        <span v-bind:title="mytitle">
+            Welocme Vue app Menachem Mendel Hoffman with Vue App!<br>
+            Hover over me, to see current time.
+            <br><br>
+        </span>
+    </div>
+
+    <!--task 2-->
+    <div>
+        <p>This is example of v-if , v-else, v-else-if and v-show.</p>
+        <span v-show="weather">Today weather is currently</span>
+        <span v-if="weather"> sunny.</span>
+        <span v-else-if="weather"> coldly.</span>
+        <span v-else="weather">  Raining.</span>
+        
+    </div>
+    <p>This is example of v-for this is for loop to itearte over elements in the array.</p>
+    <ol>
+        <li v-for="i in myItems">
+            {{i.value}}
+        </li>
+    </ol>
+     <!--v-on --> 
+     <p>This is example of v-on this is when press the button the atcion takes happens.</p>
+    <button v-on:click="reverseMessage"> this message is reversed</button>
+    <p>{{text}}</p>
+    </div>
+
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+               
+                mytitle: 'You load this page on ' + new Date().toLocaleString(),
+                weather: true,
+                myItems: [
+                    {value:'learn html'},
+                    {value:'learn css'},
+                    {value: 'learn js'},
+                ],
+                text: 'Hello Hoffy with Vue!- Vue app',
+            },
+            methods: {
+                reverseMessage: function () {
+                    this.text = this.text.split('').reverse().join('')
+                }
+            }
+        });
+    </script>
+</body>
+</html>
