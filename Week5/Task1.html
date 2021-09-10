@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=div, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <ol>
+            <li v-for="week in Week5">
+                {{week.text}}
+            </li>
+            <li v-for="hour in Hours">
+                {{hour.time}}
+            </li>
+        </ol>
+
+        <ol>
+            <Week5 
+            v-for="week in Week5",
+            v-bind:Week5="week",
+            ></Week5>
+        </ol>
+        <p>{{message}}</p>
+        <ol>
+            <Hours 
+            v-for="hour in Hours",
+            v-bind:Hours="hour",
+            ></Hours>
+        </ol>
+    </div>
+<script>
+  Vue.component('Week5', {
+    props:['text'],
+    template: '<li>text: {{week.text}}</li>'
+});
+
+Vue.component('Hours', {
+    props:['time'],
+    template: '<li>time: {{hour.time}}</li>'
+});
+    var app = new Vue({
+        el: "#app",
+        data: {
+            mytitle: 'The new component',
+            Week5:[
+                {key:1, text:"Week 1"},
+                {key:2, text:"Week 2"},
+                {key:3, text:"Week 3"},
+                {key:4, text:"Week 4"},
+                {key:5, text:"Week 5"},
+                {key:6, text:"Week 6"},
+                {key:7, text:"Week 7"},
+            ],
+            message: "This paragraph ",
+            Hours:[
+                {key:1, time:"01:00"},
+                {key:2, time:"02:00"},
+                {key:3, time:"03:00"},
+                {key:4, time:"04:00"},
+                {key:5, time:"05:00"},
+                {key:6, time:"06:00"},
+                {key:7, time:"07:00"},
+                {key:8, time:"08:00"},
+                {key:9, time:"09:00"},
+                {key:10, time:"10:00"},
+                {key:11, time:"11:00"},
+                {key:12, time:"12:00"},
+
+            ],
+
+        },
+    });
+
+</script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <p>
+            <button v-on:onclick="increase">
+                increase
+            </button>
+            <button v-on:click='$emit'>
+                increase More
+            </button> 
+        </p>
+        <p><counter v-bind:info="message" v-for="i in list"></counter>
+            <counter v-bind:info="message"></counter>
+            <counter v-bind:info="message"></counter>
+        </p>
+        
+    </div>
+    <div>
+        <web-post 
+        v-for= "post in post"
+        v-bind:post="post"
+        v-bind:id="id"
+        ></web-post>
+    </div>
+    <script>
+Vue.component("web-post",{
+    props:["post"],
+    template:'<div><h1>{{post.title}}</h1><h6>{{post.id}}</h6></div>',
+})
+Vue.component("blog-post",{
+	props:["post"],
+    template:'<div><h1>{{post.title}}</h1><h6>{{post.id}}</h6></div>',
+})
+Vue.component("counter",{
+    props:["info"],
+    template: "<button v-on:click='counter ++;pointer --'>{{counter}} {{info}} {{pointer}}</button>",
+    data: function(){
+        return {
+            counter: 0,
+            pointer: 0,
+        }
+    }
+})
+var app = new Vue({
+    el:"#app",
+    data:{
+        list:[
+        {key:1, text:"item 1"},
+        {key:2, text:"item 2"},
+        {key:3, text:"item 3"},
+        ],
+        count:0,
+        post:[
+        {id:1, title:"first web post"},
+        {id:2, title:"second web post "},
+        {id:3, title:"third web post"},
+        ],
+    },
+    methods: {
+        increase: function(){
+            this.count= this.count + 1
+        },
+    },
+            
+})
+    </script>
+</body>
+</html>
