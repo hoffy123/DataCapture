@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h2>JavaScript Array</h2>
+    <p id="carArray"></p>
+    <h2>JavaScript Curent time method since jan 1 1970</h2>
+    <p id="currentTime"></p>
+    <h2>JavaScript get / Set method of student</h2>
+    <p id="studentFullName"></p>
+    <p id="studentAge"></p>
+    <p id="studentHeight"></p>
+    <script>
+
+
+    //strings task 1
+    let name = "Elon Musk";
+    // length
+    let nLength = name.length;
+    console.log(nLength);
+    // slice
+    name.slice(2,4);
+    // substring
+    name.substring (4);
+    // replace
+    let oldUnit = "Uni Semester now is T1 ";
+    let newUnit = oldUnit.replace ("T1", "T2") ;
+    // upperCase
+    let upperCaseText = oldUnit.toUpperCase();
+    let lowerCaseText = oldUnit.toLowerCase();
+    // trim
+    let lessSpace = "     less space      ";
+    lessSpace.trim();
+    
+    // Task 2
+    let x = 123;
+    x.toString();
+    (123).toString();
+    (100+23).toString();
+    let x = 1;
+    let y = 2;
+    let sum = x + y;
+    // number 
+    let z = 200
+    // string 
+    let n = "200";
+    let number = 12343.213323;
+    number.toPrecision(3);
+    number.valueOf();
+    // array
+    const carArray = ["BMW", "Toyota", "Hyundai", "Mazda"];
+    carArray [0] =  "Rolls Royce";
+    document.getElementById("carArray").innerHTML = carArray.join("-");
+   // Task 3
+   let xTime = getTime();
+   document.getElementById("currentTime").innerHTML = xTime;
+   
+   const student ={
+     fullName: "Steve Jobs",
+     age: 75,
+     height: 1.75,
+     get fullName(){
+       return this.fullName;
+     },
+     set fullName(){
+        this.fullName = fullName;
+     },
+     get age(){
+       return this.age;
+     },
+     set age(){
+        this.age = age;
+     },
+     get height(){
+       return this.height;
+     },
+     set height(){
+        this.height = height;
+     },
+   };
+   student.fullName = "Tom Jones";
+   student.age = 25;
+   student.height = 1.52;
+   document.getElementsById("studentFullName").innerHTML = student.fullName;
+   document.getElementsById("studentAge").innerHTML = student.age;
+   document.getElementsById("studentHeight").innerHTML = student.height;
+    </script>
+  </body>
+</html>
