@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <!-- v-model handing user input-->
+    <div id="app">
+    
+    <form >
+        <h3>Student Loyalty<br> Sign Up Form</h3>
+        <label for="name">Studnet Number:</label><br><br>
+        <input id="name" v-model="username" type="text" placeholder="Student Number" ><br><br>
+
+        <label for="password">Password:</label><br><br>
+        <input id="password" v-model="password" type="password" placeholder="******" ><br><br>
+
+        <label for="email">Uni Email:</label><br><br>
+        <input id="email" v-model="email" type="email" placeholder="student@deakin.edu.au" ><br><br>
+        
+        <button v-on:click="checkInput" type="submit">Submit</button>
+    </form>
+    <h3>Order Form Pizza Options</h3>
+    <div id="v-model-PizzaOptions" >
+        <input type="checkbox" id="more chesses" value="more chesses" v-model="PizzaOptions" />
+        <label for="more chesses"> More Chesses</label>
+        <input type="checkbox" id="mushrooms" value="mushrooms" v-model="PizzaOptions" />
+        <label for="mushrooms"> Mushrooms</label>
+        <input type="checkbox" id="pineapple " value="pineapple " v-model="PizzaOptions" />
+        <label for="pineapple "> Pineapple </label>
+        <input type="checkbox" id="olives " value="olives " v-model="PizzaOptions" />
+        <label for="olives "> Olives </label>
+        <br>
+        <span>Pizza Options: {{ PizzaOptions }}</span>
+      </div>
+    </div>
+    <script>
+        var App  = new Vue ({
+            el:"#app",
+            data:{
+                username:'',
+                password:'',
+                email:'',
+                return:  {
+                    PizzaOptions: []
+                },
+            },
+
+            method:{
+                checkInput: function () {
+                    var str = "";
+                    if(this.username)
+                    {
+                        str = str + "username" + this.username;
+                    }
+                    if(this.password){
+                        str = str + "password" + this.password;
+                    }
+                    if(this.email){
+                        str = str + "email" + this.email;
+                    }
+                    if(str){
+                        alert(str)
+                    }else{
+                        alert("Please input required information.")
+                    }
+                }
+            }
+        }).mount("#v-model-PizzaOptions");
+    </script>
+    
+    
+</body>
+</html>
