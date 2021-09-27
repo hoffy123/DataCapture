@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Menachem Mendel Hoffman 221100074">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Uni Pizza </title>
+</head>
+<div>
+    <div class = "container">
+         <div id="header">
+            <a href="index.html">
+                <h1>Uni Pizza</h1>
+            </a>
+        </div> 
+        <div id="navBar">
+            <ol>
+                <il>
+                    <a href="index.html"> HOME</a>
+                </il>
+                <il>
+                    <a href="menu.html"> MENU</a>
+                </il>
+                <il>
+                    <a href="contact.html"> CONTACT</a>
+                </il>
+                <il>
+                    <input class="search-bar" type="text" placeholder="SEARCH BAR">
+                </il>
+            </ol>
+      </div> 
+      <div id="contentOne">
+        <img src="PizzaImg7.jpg"
+        alt="image of Pizza" width="450vm" height="250vh">
+    </div>
+    <div id="contentTwo">
+        <img src="PizzaImg8.jpg"
+        alt="image of Pizza" width="450vm" height="250vh">
+    </div>
+    <div id="contentThree">
+        <img src="PizzaImg9.jpg"
+        alt="image of Pizza" width="450vm" height="250vh">
+    </div>
+      </div>
+      
+      <div id="leftContent contact-main">
+        <form id="OrderForm" method="post" action="file.php">
+            <h3>Message FORM</h3>
+            <b>First Name: </b>
+              <input type="text" name="FirstName" size="25" maxlength="50" placeholder="Enter First Name"required><br>
+            <b>Last Name: </b>
+               <input type="text" name="LastName" size="25" maxlength="50" placeholder="Enter Last Name" required><br>
+            <b>Mobile Number: </b>
+            <input type="text"name="MobileNumber" size="20" maxlength="10" placeholder="Enter Mobile Number"><br>
+            <b>Email Address: </b>
+               <input type="email"name="Email" size="25" maxlength="100" placeholder="Enter Email Address"><br>
+
+            <b>Submit Message: </b>
+               <input type="button" onclick="alert('Message Submitted')" value="Submit" ><br>
+               <b>Reset button: </b>
+               <input type="reset" onclick="alert('Reset form')" value="Clear">
+          </form>
+        </div>
+        <div id="footer">
+            <h3>
+                Ph: 9312 0000   Email: hello@UniPizza.com  Uni Pizza  Est. 2020
+            </h3>
+        </div>     
+    </div>
+    </body>
+</html>
